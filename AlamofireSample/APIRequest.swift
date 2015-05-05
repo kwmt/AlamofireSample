@@ -4,6 +4,7 @@
 //
 
 import Alamofire
+import SwiftyJSON
 
 class APIRequest {
   
@@ -83,7 +84,7 @@ class APIRequest {
 
   }
   
-  func readUser(completion:(json:success:Bool, error:NSError?) -> Void){
+  func readUser(completion:(json:JSON, success:Bool, error:NSError?) -> Void){
     let request = Alamofire.request(Router.ReadUser("get")) // GET /users/
     //https://github.com/Alamofire/Alamofire#response-json-handler
     request.responseJSON(){
@@ -91,12 +92,12 @@ class APIRequest {
       println("request:\(request)\n, response:\(response)\n, jsonData:\(jsonData)\n, error:\(error)")
       let success = error == nil
       if !success {
-        completion(success: false, error: error)
+        completion(json:nil, success: false, error: error)
         return
       }
       //jsonデータをモデルにマッピングしておいて、呼び出し元に返す
       // ...
-      completion(success: true, error: nil)
+      completion(json:JSON(jsonData!), success: true, error: nil)
     }
   }
   

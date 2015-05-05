@@ -13,8 +13,11 @@ class ViewController: UIViewController {
     
     
     APIRequest.sharedInstance.readUser() {
-      (success, error) in
-      println("APIRequest.sharedInstance.readUser:\(success), \(error)")
+      (json, success, error) in
+      println("APIRequest.sharedInstance.readUser")
+      println("json:\(json)\nsuccess:\(success)\nerror:\(error)")
+      let origin = json["origin"]
+      println("\(origin)")
     }
     
   }
