@@ -92,7 +92,7 @@ class APIRequest {
       println("request:\(request)\n, response:\(response)\n, jsonData:\(jsonData)\n, error:\(error)")
       let success = error == nil
       if !success {
-        completion(json:nil, success: false, error: error)
+        completion(json:nil, success:                   false, error: error)
         return
       }
       //jsonデータをモデルにマッピングしておいて、呼び出し元に返す

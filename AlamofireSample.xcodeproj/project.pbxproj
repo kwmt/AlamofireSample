@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		30CAAEC3795F6E156B65980D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FAC497258A00C676342BF1F /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		710162011AF870B600F8F7FE /* ModelLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710162001AF870B600F8F7FE /* ModelLocator.swift */; };
+		710162031AF8713300F8F7FE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710162021AF8713300F8F7FE /* UserModel.swift */; };
+		710162051AF8728300F8F7FE /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710162041AF8728300F8F7FE /* UserEntity.swift */; };
 		7109DDD91AF4CE4A00785FAC /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7109DDD81AF4CE4A00785FAC /* APIRequest.swift */; };
 		711A34151AE4091E0085113A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711A34141AE4091E0085113A /* AppDelegate.swift */; };
 		711A34171AE4091E0085113A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711A34161AE4091E0085113A /* ViewController.swift */; };
@@ -29,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		1FAC497258A00C676342BF1F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		710162001AF870B600F8F7FE /* ModelLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelLocator.swift; sourceTree = "<group>"; };
+		710162021AF8713300F8F7FE /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		710162041AF8728300F8F7FE /* UserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		7109DDD81AF4CE4A00785FAC /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		711A340F1AE4091E0085113A /* AlamofireSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		711A34131AE4091E0085113A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,6 +107,9 @@
 				711A341D1AE4091E0085113A /* LaunchScreen.xib */,
 				711A34121AE4091E0085113A /* Supporting Files */,
 				7109DDD81AF4CE4A00785FAC /* APIRequest.swift */,
+				710162001AF870B600F8F7FE /* ModelLocator.swift */,
+				710162021AF8713300F8F7FE /* UserModel.swift */,
+				710162041AF8728300F8F7FE /* UserEntity.swift */,
 			);
 			path = AlamofireSample;
 			sourceTree = "<group>";
@@ -291,7 +300,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				711A34171AE4091E0085113A /* ViewController.swift in Sources */,
+				710162051AF8728300F8F7FE /* UserEntity.swift in Sources */,
 				7109DDD91AF4CE4A00785FAC /* APIRequest.swift in Sources */,
+				710162011AF870B600F8F7FE /* ModelLocator.swift in Sources */,
+				710162031AF8713300F8F7FE /* UserModel.swift in Sources */,
 				711A34151AE4091E0085113A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
